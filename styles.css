@@ -29,12 +29,6 @@ header {
     animation: slideDown 1s ease-in-out;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
-
 nav ul {
     list-style: none;
     margin: 0;
@@ -96,6 +90,12 @@ nav ul li a:hover {
     animation: slideInFromLeft 1s ease-in-out;
 }
 
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
 #main-banner p {
     font-size: 24px;
     margin: 10px 0 0;
@@ -112,7 +112,7 @@ h2 {
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
-    color: #333;
+    color: #fff;
     position: relative;
 }
 
@@ -501,3 +501,4 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+
