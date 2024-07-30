@@ -84,6 +84,10 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.banner-content h2 {
+    color: #fff;
+}
+
 #main-banner h1 {
     font-size: 48px;
     margin: 0;
@@ -112,7 +116,7 @@ h2 {
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
-    color: #fff;
+    color: #555;
     position: relative;
 }
 
