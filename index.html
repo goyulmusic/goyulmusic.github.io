@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://goyulmusic.github.io/">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta property="og:title" content="고율국악학원 - 국내최대규모 국악음악학원">
@@ -22,6 +22,7 @@
     <meta name="twitter:title" content="고율국악학원 - 국내최대규모 국악음악학원">
     <meta name="twitter:description" content="천안 신불당동에 위치한 국내 최대 규모의 국악 전문 학원 고율국악학원입니다. 취미, 입시, 임용 레슨을 제공합니다.">
     <meta name="twitter:image" content="https://yt3.googleusercontent.com/3rX0CpdBXFl2EYoi06z5WVICWF4g0N1unAceO6UJLH4bxMN2oqx2RfubdJOUboHfFGWCymOGcg=s900-c-k-c0x00ffffff-no-rj">
+    <meta name="theme-color" content="#d8a692">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,7 +57,7 @@
 <body>
     <header>
         <div class="logo"><h1>고율국악학원</h1></div>
-        <nav>
+        <nav aria-label="메인 내비게이션">
             <ul>
                 <li><a href="#main-banner">홈</a></li>
                 <li><a href="#lessons">레슨</a></li>
@@ -64,388 +65,387 @@
                 <li><a href="#contact">위치 안내</a></li>
             </ul>
         </nav>
+        <button id="darkModeToggle" aria-label="다크모드 전환"><i class="fas fa-moon"></i></button>
     </header>
 
-    <section id="main-banner">
-        <video autoplay muted loop id="bg-video">
-            <source src="./images/1.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="banner-content">
-            <h2>고율국악학원</h2>
-            <p>전통의 아름다움을 배우는 곳</p>
-        </div>
-    </section>
-<!-- 
-    <section id="emotional-introduction">
-        <h2>고율국악학원 소개</h2>
-        <div class="introduction-content">
-            <div class="info-card">
-                <i class="fas fa-school"></i>
-                <p>전국 최대 규모의 교육청 정식 등록 국악 음악 학원</p>
+    <main>
+        <section id="main-banner">
+            <video autoplay muted loop id="bg-video" playsinline>
+                <source src="./images/1.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="banner-content">
+                <h2>고율국악학원</h2>
+                <p>전통의 아름다움을 배우는 곳</p>
             </div>
-            <div class="info-card">
-                <i class="fas fa-graduation-cap"></i>
-                <p>한예종, 중앙대 등 최고의 대학교 출신 최고 강사진</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-users"></i>
-                <p>학생반, 유아반, 취미반, 수행 평가반 등 맞춤형 수업</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <p>취미와 전문을 위한 1:1 개인레슨 제공</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-music"></i>
-                <p>방음 연습실과 전문가용 악기 무료 대여, 최상의 연습 환경 지원</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-coffee"></i>
-                <p>라운지 내 무료 간식과 차 제공, 쾌적한 학습 공간</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-calendar-alt"></i>
-                <p>매년 정기 연주회, 연주 영상 제작</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-parking"></i>
-                <p>무료 주차, 평일 13:00-22:00, 토요일 10:00-18:00 운영</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="lessons-overview">
-        <h2>레슨 소개</h2>
-        <div class="lessons-boxes">
-            <a href="https://blog.naver.com/goyulmusic/223518065102" class="lesson-box">
-                <div class="box-content">
-                    <h3>취미레슨</h3>
+        <section id="lessons" aria-labelledby="lessons-title">
+            <h2 id="lessons-title">레슨 안내</h2>
+            <div class="lessons-boxes">
+                <a href="https://blog.naver.com/goyulmusic/223518065102" class="lesson-box" target="_blank" rel="noopener">
+                    <div class="box-content">
+                        <h3>취미레슨</h3>
+                    </div>
+                </a>
+                <a href="https://blog.naver.com/goyulmusic/222851735475" class="lesson-box" target="_blank" rel="noopener">
+                    <div class="box-content">
+                        <h3>입시레슨</h3>
+                    </div>
+                </a>
+                <a href="https://blog.naver.com/goyulmusic/223908755112" class="lesson-box" target="_blank" rel="noopener">
+                    <div class="box-content">
+                        <h3>임용레슨</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="teachers" aria-labelledby="teachers-title">
+            <h2 id="teachers-title">선생님 소개</h2>
+            <div class="teachers-container">
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222688395750" target="_blank"><img
+                            src="./images/teachers/1.jpeg" alt="김 선생님 - 가야금" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>대금,소금,단소</h3>
+                        <p>원장</p>
+                    </div>
                 </div>
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222765012387" target="_blank"><img
+                            src="./images/teachers/10.jpeg" alt="배 선생님 - 단소" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>해금</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222688444278" target="_blank"><img
+                            src="./images/teachers/2.jpeg" alt="이 선생님 - 해금" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>해금</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/223406799601" target="_blank"><img
+                            src="./images/teachers/11.jpeg" alt="유 선생님 - 민요" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>가야금</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222764999814" target="_blank"><img
+                            src="./images/teachers/9.jpeg" alt="한 선생님 - 소고" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>가야금</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222688454440" target="_blank"><img
+                            src="./images/teachers/3.jpeg" alt="박 선생님 - 대금" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>가야금</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222736214052" target="_blank"><img
+                            src="./images/teachers/6.jpeg" alt="윤 선생님 - 거문고" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>거문고</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222763548711" target="_blank"><img
+                            src="./images/teachers/8.jpeg" alt="서 선생님 - 북" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>장구</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222738872136" target="_blank"><img
+                            src="./images/teachers/7.jpeg" alt="안 선생님 - 장구" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>판소리</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <a href="https://blog.naver.com/goyulmusic/222688466429" target="_blank"><img
+                            src="./images/teachers/5.jpeg" alt="정 선생님 - 민요" loading="lazy"></a>
+                    <div class="teacher-info">
+                        <h3>민요</h3>
+                        <p>선생님</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilities" aria-labelledby="facilities-title">
+            <h2 id="facilities-title">시설 사진</h2>
+            <div class="facilities-gallery">
+                <img src="./images/fac/1.jpg" alt="고율국악학원 시설 사진 1" loading="lazy">
+                <img src="./images/fac/2.jpg" alt="고율국악학원 시설 사진 2" loading="lazy">
+                <img src="./images/fac/3.jpg" alt="고율국악학원 시설 사진 3" loading="lazy">
+                <img src="./images/fac/4.jpg" alt="고율국악학원 시설 사진 4" loading="lazy">
+                <img src="./images/fac/5.jpg" alt="고율국악학원 시설 사진 5" loading="lazy">
+                <img src="./images/fac/6.jpg" alt="고율국악학원 시설 사진 6" loading="lazy">
+                <img src="./images/fac/7.jpeg" alt="고율국악학원 시설 사진 7" loading="lazy">
+                <img src="./images/fac/8.jpeg" alt="고율국악학원 시설 사진 8" loading="lazy">
+                <img src="./images/fac/9.jpeg" alt="고율국악학원 시설 사진 9" loading="lazy">
+                <img src="./images/fac/10.jpeg" alt="고율국악학원 시설 사진 10" loading="lazy">
+            </div>
+        </section>
+
+        <section id="performance-gallery" aria-labelledby="performance-title">
+            <h2 id="performance-title">정기 공연 사진</h2>
+            <div class="gallery-container">
+                <div class="gallery-box video-box">
+                    <video autoplay muted loop>
+                        <source src="./images/concerts/1.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div class="image-gallery">
+                    <div class="gallery-box">
+                        <img src="./images/concerts/2.jpg" alt="Performance 2" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/3.jpg" alt="Performance 3" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/4.jpg" alt="Performance 4" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/5.jpg" alt="Performance 5" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/6.jpg" alt="Performance 6" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/7.jpg" alt="Performance 6" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/8.jpg" alt="Performance 6" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/001.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/002.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/003.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/004.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/005.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/006.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/007.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/008.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/009.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/010.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/011.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/012.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/013.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/014.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/015.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/016.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                    <div class="gallery-box">
+                        <img src="./images/concerts/new/017.jpeg" alt="Performance 7" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" aria-labelledby="benefits-title">
+            <h2 id="benefits-title">고율국악학원에서 취미생활하기 좋은점 3가지</h2>
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-music"></i></div>
+                    <div class="benefit-content">
+                        <h3>1. 연습실 & 악기대여 무료</h3>
+                        <p>수강생은 원내 연습실과 악기대여를 매일 무료로 이용할 수 있습니다.<br>연습실/악기 대여에 추가 비용이 없으며, 최고의 연습환경을 제공합니다.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="benefit-content">
+                        <h3>2. 대형 공연장 정기연주회</h3>
+                        <p>상·하반기 정기연주회에서 실력을 뽐낼 수 있는 기회 제공!<br>참가비도 0원, 부담 없이 무대 경험을 쌓을 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-star"></i></div>
+                    <div class="benefit-content">
+                        <h3>창극특강, 교과과목 특강 등</h3>
+                        <p>국악학원 중 유일하게 다양한 특강을 무료로 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-extra">
+                <h3>그 외 좋은 점들</h3>
+                <ul class="benefit-list">
+                    <li>전국최대규모 프리미엄 천안유일 국악학원</li>
+                    <li>능력있고 친절한 각파트 강사진</li>
+                    <li>취미/전문 모두 1:1 개인레슨</li>
+                    <li>칭찬도장 수업 시스템(레슨 및 연습 의지상승)</li>
+                    <li>학원 올 때마다 연습지도</li>
+                    <li>특별한 나만의 취미로 자신감 상승</li>
+                    <li>각 파트별 단체 합주연습</li>
+                    <li>여러 파트들과의 중주연습</li>
+                    <li>취미를 공유할 수 있는 건강한 친목도모</li>
+                    <li>라운지 내 간식, 차 무료</li>
+                    <li>시원하고 깔끔한 실내공간</li>
+                    <li>레슨 개월 추가시 무료 레슨추가 혜택</li>
+                    <li>(카드할부/현금영수증/천안사랑카드 가능)</li>
+                    <li>신불당 내 학원건물로 좋은 곳에 위치</li>
+                    <li>이용시간 최대 평일 13:00-22:00, 토 10:00-18:00</li>
+                    <li>최대 3시간 주차무료 등</li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3><i class="fas fa-phone-alt"></i> 레슨 상담 문의</h3>
+                <ul class="contact-list">
+                    <li><strong>전화상담:</strong> <a href="tel:050713561935">0507-1356-1935</a></li>
+                    <li><strong>네이버톡톡상담:</strong> <a href="https://talk.naver.com/ct/w48ki1" target="_blank" rel="noopener">네이버톡톡 바로가기</a></li>
+                    <li><strong>블로그:</strong> <a href="https://blog.naver.com/goyulmusic" target="_blank" rel="noopener">blog.naver.com/goyulmusic</a></li>
+                    <li><strong>인스타그램:</strong> <a href="https://www.instagram.com/goyul_music/" target="_blank" rel="noopener">@goyul_music</a></li>
+                    <li><strong>카카오톡 ID:</strong> goyulmusic</li>
+                    <li><strong>위치:</strong> 천안시 서북구 불당 21로 65 더다움프라자 7층</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">위치 안내</h2>
+            <div class="location-section">
+                <div class="location-cards">
+                    <div class="location-card">
+                        <h3>이런 분께 추천합니다</h3>
+                        <ul class="location-list recommend-list">
+                            <li>학업이나 일로 스트레스를 받는 분</li>
+                            <li>나만의 시간과 힐링이 필요한 분</li>
+                            <li>학교 수행평가, 입시, 임용 시험준비가 필요한 분</li>
+                            <li>해외유학, 태교로 국악을 배워보고 싶으신 분</li>
+                        </ul>
+                    </div>
+                    <div class="location-card">
+                        <h3>학원 특징</h3>
+                        <ul class="location-list feature-list">
+                            <li>쉐어레슨 | 개인레슨 | 임용레슨 | 유학레슨</li>
+                            <li>수강생 개인 방음 연습실 무료</li>
+                            <li>학원내 악기 무료대여 | 악기렌탈</li>
+                            <li>원내발표회 및 학원 정기연주회 발표</li>
+                            <li>학교음악교과 국악이론+음악이론 수업</li>
+                            <li>유아 | 초중고 | 성인 | 취미 | 입시 | 임용</li>
+                            <li>판소리 | 가야금 | 해금 | 대금 | 단소 | 소금</li>
+                            <li>거문고 | 아쟁 | 피리 | 태평소 | 생황 | 장구</li>
+                            <li>바쁜 일상속에서 나만의 여유를 찾는 시간</li>
+                            <li>월-금 13:00~22:00 토 10:00~18:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location-map-wrap">
+                    <iframe src="https://www.google.com/maps?q=천안시+서북구+불당21로+65+더다움프라자+703호&output=embed" width="100%" height="350" style="border-radius:14px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button onclick="window.open('https://naver.me/xgGEIbTE', '_blank')" class="naver-map-btn">네이버 지도 보기</button>
+                </div>
+                <div class="location-info-cards">
+                    <div class="info-card">
+                        <span class="info-label">주소</span>
+                        <span class="info-value">충청남도 천안시 서북구 불당21로 65 더다움프라자 703호</span>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-label">연락처</span>
+                        <span class="info-value"><a href="tel:050713561935">0507-1356-1935</a></span>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-label">사업자 번호</span>
+                        <span class="info-value">649-92-01449</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-wrapper" aria-labelledby="instagram-title">
+            <div class="instagram-header">
+                <img src="./images/icons/instagram.png" alt="Instagram" class="instagram-logo">
+                <div class="instagram-account">
+                    <span class="instagram-handle">@goyul_music</span>
+                    <a href="https://www.instagram.com/goyul_music/" target="_blank" rel="noopener" class="instagram-btn">인스타그램 방문하기</a>
+                </div>
+            </div>
+            <div class="instagram-feed-preview">
+                <a href="https://www.instagram.com/goyul_music/" target="_blank" rel="noopener">
+                    <img src="./images/concerts/new/001.jpeg" alt="인스타그램 피드 예시1" class="insta-thumb">
+                </a>
+                <a href="https://www.instagram.com/goyul_music/" target="_blank" rel="noopener">
+                    <img src="./images/concerts/new/002.jpeg" alt="인스타그램 피드 예시2" class="insta-thumb">
+                </a>
+                <a href="https://www.instagram.com/goyul_music/" target="_blank" rel="noopener" class="insta-more">
+                    <span>+ 더 보기</span>
+                </a>
+            </div>
+        </section>
+
+        <nav id="social-links" aria-label="소셜 미디어 링크" style="text-align: center; margin: 20px 0; font-size: 0;">
+            <a href="https://www.instagram.com/goyul_music/" target="_blank" rel="noopener" style="margin: 0 10px; font-size: 16px;">
+                <img src="./images/icons/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
             </a>
-            <a href="https://blog.naver.com/goyulmusic/222851735475" class="lesson-box">
-                <div class="box-content">
-                    <h3>입시레슨</h3>
-                </div>
+            <a href="https://blog.naver.com/goyulmusic" target="_blank" rel="noopener" style="margin: 0 10px; font-size: 16px;">
+                <img src="./images/icons/naver_blog.png" alt="Naver Blog" style="width: 50px; height: 50px;">
             </a>
-            <a href="https://blog.naver.com/goyulmusic/223359608212" class="lesson-box">
-                <div class="box-content">
-                    <h3>임용레슨</h3>
-                </div>
+            <a href="https://naver.me/xgGEIbTE" target="_blank" rel="noopener" style="margin: 0 10px; font-size: 16px;">
+                <img src="./images/icons/naver_map.png" alt="Naver Map" style="width: 50px; height: 50px;">
             </a>
-        </div>
-    </section> -->
-
-
-    <section id="teachers">
-        <h2>선생님 소개</h2>
-        <div class="teachers-container">
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222688395750" target="_blank"><img
-                        src="./images/teachers/1.jpeg" alt="김 선생님 - 가야금"></a>
-                <div class="teacher-info">
-                    <h3>대금,소금,단소</h3>
-                    <p>원장</p>
-                </div>
-            </div>
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222765012387" target="_blank"><img
-                        src="./images/teachers/10.jpeg" alt="배 선생님 - 단소"></a>
-                <div class="teacher-info">
-                    <h3>해금</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222688444278" target="_blank"><img
-                        src="./images/teachers/2.jpeg" alt="이 선생님 - 해금"></a>
-                <div class="teacher-info">
-                    <h3>해금</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-<!--             <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222688454440" target="_blank"><img
-                        src="./images/teachers/4.jpeg" alt="최 선생님 - 판소리"></a>
-                <div class="teacher-info">
-                    <h3>가야금</h3>
-                    <p>선생님</p>
-                </div>
-            </div> -->
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/223406799601" target="_blank"><img
-                        src="./images/teachers/11.jpeg" alt="유 선생님 - 민요"></a>
-                <div class="teacher-info">
-                    <h3>가야금</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222764999814" target="_blank"><img
-                        src="./images/teachers/9.jpeg" alt="한 선생님 - 소고"></a>
-                <div class="teacher-info">
-                    <h3>가야금</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222688454440" target="_blank"><img
-                        src="./images/teachers/3.jpeg" alt="박 선생님 - 대금"></a>
-                <div class="teacher-info">
-                    <h3>가야금</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222736214052" target="_blank"><img
-                        src="./images/teachers/6.jpeg" alt="윤 선생님 - 거문고"></a>
-                <div class="teacher-info">
-                    <h3>거문고</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222763548711" target="_blank"><img
-                        src="./images/teachers/8.jpeg" alt="서 선생님 - 북"></a>
-                <div class="teacher-info">
-                    <h3>장구</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222738872136" target="_blank"><img
-                        src="./images/teachers/7.jpeg" alt="안 선생님 - 장구"></a>
-                <div class="teacher-info">
-                    <h3>판소리</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-            <div class="teacher">
-                <a href="https://blog.naver.com/goyulmusic/222688466429" target="_blank"><img
-                        src="./images/teachers/5.jpeg" alt="정 선생님 - 민요"></a>
-                <div class="teacher-info">
-                    <h3>민요</h3>
-                    <p>선생님</p>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-
-    <section id="facilities">
-        <h2>시설 사진</h2>
-        <div class="facilities-gallery">
-            <img src="./images/fac/1.jpg" alt="고율국악학원 시설 사진 1">
-            <img src="./images/fac/2.jpg" alt="고율국악학원 시설 사진 2">
-            <img src="./images/fac/3.jpg" alt="고율국악학원 시설 사진 3">
-            <img src="./images/fac/4.jpg" alt="고율국악학원 시설 사진 4">
-            <img src="./images/fac/5.jpg" alt="고율국악학원 시설 사진 5">
-            <img src="./images/fac/6.jpg" alt="고율국악학원 시설 사진 6">
-            <img src="./images/fac/7.jpeg" alt="고율국악학원 시설 사진 7">
-            <img src="./images/fac/8.jpeg" alt="고율국악학원 시설 사진 8">
-            <img src="./images/fac/9.jpeg" alt="고율국악학원 시설 사진 9">
-            <img src="./images/fac/10.jpeg" alt="고율국악학원 시설 사진 10">
-        </div>
-    </section>
-
-    <section id="performance-gallery">
-        <h2>정기 공연 사진</h2>
-        <div class="gallery-container">
-            <div class="gallery-box video-box">
-                <video autoplay muted loop>
-                    <source src="./images/concerts/1.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-            </div>
-            <div class="image-gallery">
-                <div class="gallery-box">
-                    <img src="./images/concerts/2.jpg" alt="Performance 2">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/3.jpg" alt="Performance 3">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/4.jpg" alt="Performance 4">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/5.jpg" alt="Performance 5">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/6.jpg" alt="Performance 6">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/7.jpg" alt="Performance 6">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/8.jpg" alt="Performance 6">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/001.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/002.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/003.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/004.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/005.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/006.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/007.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/008.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/009.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/010.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/011.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/012.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/013.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/014.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/015.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/016.jpeg" alt="Performance 7">
-                </div>
-                <div class="gallery-box">
-                    <img src="./images/concerts/new/017.jpeg" alt="Performance 7">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="benefits">
-        <h2>고율국악학원에서 취미생활하기 좋은점 3가지</h2>
-        <div class="benefit">
-            <h3>1. 고율 수강생들은 원내 연습실과 악기대여 무료로 매일 이용가능!</h3>
-            <p>연습실 대여나 악기 대여할때 보통 금액이 발생되거나 대여문의로 연락이 많이 오지만, 수강생분들의 좋은 연습환경을 위해 받지않고 있다는 사실 <i class="fas fa-exclamation-circle"></i></p>
-        </div>
-        <div class="benefit">
-            <h3>2. 상반기 하반기 정기연주회때마다 1년에 2번씩 큰 공연장에서 실력을 뽐낼 수 있는 기회 제공! 물론 참가비도 0원!</h3>
-            <p>공연기회는 많이 <i class="fas fa-check-circle"></i> 취미생활에 부담 <i class="fas fa-times-circle"></i></p>
-        </div>
-        <div class="benefit">
-            <h3>3. 창극특강, 트롯특강 등 특강개설시 무료로 수강 가능!</h3>
-            <p>창극특강은 7월부터 매주 화요일 7시 트롯특강은 8월부터 매주 목요일 7시에 하반기 정기연주회날까지 무료로 진행합니다! 판소리, 민요 전공 선생님께 전문적으로 배워볼 수 있는 기회제공, 국악학원 중 유일 <i class="fas fa-check-circle"></i></p>
-        </div>
-        <div class="benefit">
-            <h3>그외 좋은점들이 너무 많아요 <i class="fas fa-heart"></i></h3>
-            <ul>
-                <li>전국최대규모 프리미엄 천안유일 국악학원</li>
-                <li>능력있고 친절한 각파트 강사진</li>
-                <li>한타임에 최대 2명으로 소수정예 레슨</li>
-                <li>취미/전문 모두 1:1 개인레슨</li>
-                <li>칭찬도장 수업 시스템(레슨 및 연습 의지상승 <i class="fas fa-fire"></i>)</li>
-                <li>학원 올때마다 연습지도</li>
-                <li>특별한 나만의 취미로 자신감 상승 <i class="fas fa-thumbs-up"></i></li>
-                <li>각파트별 단체 합주연습</li>
-                <li>여러파트들과의 중주연습</li>
-                <li>취미를 공유할 수 있는 건강한 친목도모</li>
-                <li>라운지내 간식, 차 무료 <i class="fas fa-coffee"></i></li>
-                <li>시원하고 깔끔한 실내공간</li>
-                <li>레슨 개월 추가시 무료 레슨추가 혜택</li>
-                <li>(카드할부/현금영수증/천안사랑카드 가능 <i class="fas fa-check"></i>)</li>
-                <li>신불당 내 학원건물로 좋은곳에 위치함</li>
-                <li>이용시간 최대 평일 13:00-22:00 토 10:00-18:00</li>
-                <li>최대 3시간 주차무료 등</li>
-            </ul>
-        </div>
-        <div class="contact-info">
-            <h3><i class="fas fa-phone-alt"></i> 레슨 상담 문의</h3>
-            <p>전화상담: 0507-1356-1935</p>
-            <p>네이버톡톡상담: <a href="https://talk.naver.com/ct/w48ki1" target="_blank">https://talk.naver.com/ct/w48ki1</a></p>
-            <p>블로그: <a href="https://blog.naver.com/goyulmusic" target="_blank">https://blog.naver.com/goyulmusic</a></p>
-            <p>사이트: <a href="https://goyulmusic.wixsite.com/goyul" target="_blank">https://goyulmusic.wixsite.com/goyul</a></p>
-            <p>카카오톡 ID: goyulmusic</p>
-            <p>위치: 천안시 서북구 불당 21로 65 더다움프라자 7층</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div id="footer-description">
-        <ul>
-            <ul>✔️학업이나 일로 스트레스를 받는 분</ul>
-            <ul>✔️나만의 시간과 힐링이 필요한 분</ul>
-            <ul>✔️학교 수행평가, 입시, 임용 시험준비가 필요한 분</ul>
-            <ul>✔️해외유학, 태교로 국악을 배워보고 싶으신 분</ul>
-        </ul>
-        <ul>
-            <ul>■ 쉐어레슨 | 개인레슨 | 임용레슨 | 유학레슨</ul>
-            <ul>■ 수강생 개인 방음 연습실 무료</ul>
-            <ul>■ 학원내 악기 무료대여 | 악기렌탈</ul>
-            <ul>■ 원내발표회 및 학원 정기연주회 발표</ul>
-            <ul>■ 학교음악교과 국악이론+음악이론 수업</ul>
-            <ul>■ 유아 | 초중고 | 성인 | 취미 | 입시 | 임용</ul>
-            <ul>■ 판소리 | 가야금 | 해금 | 대금 | 단소 | 소금</ul>
-            <ul>■ 거문고 | 아쟁 | 피리 | 태평소 | 생황 | 장구</ul>
-            <ul>■ 바쁜 일상속에서 나만의 여유를 찾는 시간</ul>
-            <ul>■ 월-금 13:00~22:00 토 10:00~18:00</ul>
-        </ul>
-        </div>
-        <h2>위치 안내</h2>
-        <div id="map" style="height: 400px; width: 100%;">
-            <div id="panzoom">
-                <img src="./images/map.png" alt="Map of location">
-            </div>
-            <button onclick="window.location.href='https://naver.me/xgGEIbTE'" style="position: absolute; top: 10px; right: 10px; padding: 10px 20px; background-color: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">네이버 지도 보기</button>
-        </div>
-        <p>주소: 충청남도 천안시 서북구 불당21로 65 더다움프라자 703호</p>
-        <p>연락처: 0507-1356-1935</p>
-        <p>사업자 번호: 649-92-01449</p>
-    </section>
-
-    <div class="instagram-wrapper">
-        <h2 class="instagram-title">Follow us on Instagram</h2>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/goyul_music/" data-instgrm-version="12"></blockquote>
-    </div>
-
-    <div id="social-links" style="text-align: center; margin: 20px 0; font-size: 0;">
-        <a href="https://www.instagram.com/goyul_music/" target="_blank" style="margin: 0 10px; font-size: 16px;">
-            <img src="./images/icons/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://blog.naver.com/goyulmusic" target="_blank" style="margin: 0 10px; font-size: 16px;">
-            <img src="./images/icons/naver_blog.png" alt="Naver Blog" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://naver.me/xgGEIbTE" target="_blank" style="margin: 0 10px; font-size: 16px;">
-            <img src="./images/icons/naver_map.png" alt="Naver Map" style="width: 50px; height: 50px;">
-        </a>
-    </div>
-
+        </nav>
+    </main>
     <footer>
-        <p>&copy; 2024 고율국악학원. All rights reserved.</p>
+        <p>&copy; 2025 고율국악학원. All rights reserved.</p>
     </footer>
-
-    <script async src="//www.instagram.com/embed.js"></script>
     <script>
-        var mapOptions = {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
-            zoom: 10
-        };
-
-        var map = new naver.maps.Map('map', mapOptions);
+    // 다크모드 토글 스크립트
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if(document.body.classList.contains('dark-mode')) {
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
     </script>
 </body>
 
